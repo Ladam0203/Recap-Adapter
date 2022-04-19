@@ -1,9 +1,7 @@
 package dk.easv;
 
-import dk.easv.ourproducts.Bicycle;
-import dk.easv.ourproducts.Car;
-import dk.easv.ourproducts.Scooter;
-import dk.easv.ourproducts.Vehicle;
+import dk.easv.ourproducts.*;
+import dk.easv.theirproducts.Bus;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,7 +10,8 @@ public class Main {
                 new Bicycle(Vehicle.Color.Blue),
                 new Bicycle(Vehicle.Color.Red),
                 new Car(Vehicle.Color.Blue),
-                new Scooter(Vehicle.Color.Green)
+                new Scooter(Vehicle.Color.Green),
+                new BusAdapter(new Bus(Bus.Color.Yellow), Vehicle.Color.Red)
         };
 
         for(Vehicle vehicle : vehicles) {
