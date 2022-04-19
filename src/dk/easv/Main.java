@@ -11,7 +11,7 @@ public class Main {
                 new Bicycle(Vehicle.Color.Red),
                 new Car(Vehicle.Color.Blue),
                 new Scooter(Vehicle.Color.Green),
-                new BusAdapter(new Bus(Bus.Color.Yellow), Vehicle.Color.Red)
+                new BusAdapter(new Bus(Bus.Color.Yellow), Vehicle.Color.Red) //the color of the constructed Bus is ignored, but has to provided
         };
 
         for(Vehicle vehicle : vehicles) {
